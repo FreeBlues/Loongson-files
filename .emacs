@@ -248,7 +248,7 @@ japanese-jisx0208:-*-MS UI Gothic-medium-r-*-*-16-*-*-*-*-*-jisx0208*-*" t)
 (setq slime-lisp-implementations
       '((ccl ("~/LispBox-0.93/ccl-1.8-darwinx86/dx86cl64") :coding-system utf-8-unix)
 	(sbcl ("~/LispBox-0.93/sbcl-1.0.55/sbcl") :coding-system utf-8-unix)
-	(clisp ("~/LispBox-0.93/CLISP-2.49/clisp") :coding-system utf-8-unix)
+	(clisp ("/usr/bin/clisp") :coding-system utf-8-unix)
 	(clojure ("lein repl") :coding-system utf-8-unix)))
 
 (require 'slime-autoloads)
