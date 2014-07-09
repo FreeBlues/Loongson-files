@@ -1,3 +1,4 @@
+;; 用于 loongson-2 8089D 笔记本下 Emacs + slime + CLisp 的配置文件
 ;(require 'cl)
 
 (custom-set-variables
@@ -91,7 +92,7 @@ japanese-jisx0208:-*-MS UI Gothic-medium-r-*-*-16-*-*-*-*-*-jisx0208*-*" t)
 (add-to-list 'load-path "~/LispBox-0.93/CLISP-2.49/")
 
 ;; 20140119 最新的 slime
-(add-to-list 'load-path "~/LispBox-0.93/slime-20140119/")
+(add-to-list 'load-path "/LispBox-0.93/slime-20140119/")
 ;(setq load-path (cons "~/LispBox-0.93/slime-20140119/" load-path))
 
 ;; 用于和 swank 配套 clojure 的 slime，来自 technomancy / swank-clojure
@@ -246,8 +247,8 @@ japanese-jisx0208:-*-MS UI Gothic-medium-r-*-*-16-*-*-*-*-*-jisx0208*-*" t)
 ;; slime 方式
 (setq slime-lisp-implementations
       '((ccl ("~/LispBox-0.93/ccl-1.8-darwinx86/dx86cl64") :coding-system utf-8-unix)
-	(sbcl ("/Users/admin/LispBox-0.93/sbcl-1.0.55/sbcl") :coding-system utf-8-unix)
-	(clisp ("/Users/admin/LispBox-0.93/CLISP-2.49/clisp") :coding-system utf-8-unix)
+	(sbcl ("~/LispBox-0.93/sbcl-1.0.55/sbcl") :coding-system utf-8-unix)
+	(clisp ("~/LispBox-0.93/CLISP-2.49/clisp") :coding-system utf-8-unix)
 	(clojure ("lein repl") :coding-system utf-8-unix)))
 
 (require 'slime-autoloads)
